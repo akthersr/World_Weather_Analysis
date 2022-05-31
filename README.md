@@ -7,13 +7,17 @@ Specifically,after adding the weather description to the weather data we use inp
 ### Data sources:
 
 1.WeatherPy_Database.csv
+
 2.WeatherPy_vacation.csv
 
 ### Software:
 
 1.Python 3.9.7
+
 2.Jupyter Notebook 6.4.5
+
 3.Pandas, citipy, Scipy, requests, gmaps, and numpy libraries and dependencies
+
 4.OpenWeatheMap API and Directions API
 
 ## Analysis
@@ -23,11 +27,17 @@ This analysis of the data will be split into three main parts, or stages.
 1. We create a DataFrame by using OpenWeatherMap API search with weather parameters.Then,parse the JSON data from the API request.The weather parameters consists of:
 
 City and country
+
 Latitude and longitude
+
 Maximum temperature
+
 Humidity
+
 Cloudiness
+
 Wind speed
+
 Current weather description
 
 2. By identifing potential travel destinations and nearby hotels for each city, we create a marker layer map with pop-up markers that will display information on specific cities based on a customer's weather preferences.At first,we filter the Pandas DataFrame based on user inputs for a minimum and maximum temperature and find a hotel from the cities' coordinates using Google's Maps and Places API, and Search Nearby feature.At the end,the marker layer map with a pop-up marker for each city display information about the country, current weather decription and the hotel name of the city.
@@ -35,8 +45,11 @@ Current weather description
 3. In this step,four DataFrames are created, one for each city on the itinerary and the latitude and longitude pairs for each of the four cities are retrieved.A directions layer map between the cities and the travel map is created.Finally,using the Google Maps Directions API,a marker layer map with a pop-up marker between four nearby cities on the vacation itinerary is created. Each marker has the following information:
 
 Hotel name
+
 City
+
 Country
+
 Current weather description with the maximum temperature
 
 ## Outputs
@@ -53,7 +66,7 @@ After cleaning the data frame by dropping the empty rows and null hotel values w
 
 ### Vacation Search
 
-The figure below shows the locations of all the places in the database that have an daily maximum temperature between 75 and 90 degrees farinheit.
+The figure below shows the locations of all the places in the database that have a daily maximum temperature between 75 and 90 degrees farinheit.
 
 ![](https://github.com/akthersr/World_Weather_Analysis/blob/main/Vacation_Search/WeatherPy_vacation_map.png)
 
