@@ -6,19 +6,19 @@ Specifically,after adding the weather description to the weather data we use inp
 ## Resources
 ### Data sources:
 
-1.WeatherPy_Database.csv
+-  WeatherPy_Database.csv
 
-2.WeatherPy_vacation.csv
+-  WeatherPy_vacation.csv
 
 ### Software:
 
-1.Python 3.9.7
+- Python 3.9.7
 
-2.Jupyter Notebook 6.4.5
+- Jupyter Notebook 6.4.5
 
-3.Pandas, citipy, Scipy, requests, gmaps, and numpy libraries and dependencies
+- Pandas, citipy, Scipy, requests, gmaps, and numpy libraries and dependencies
 
-4.OpenWeatheMap API and Directions API
+- OpenWeatheMap API and Directions API
 
 ## Analysis
 
